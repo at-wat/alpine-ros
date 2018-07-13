@@ -47,5 +47,6 @@ RUN mkdir -p /tmp_ws/src/ \
   && rm -rf /root/.cache/pip \
   && rm -rf /var/cache/apk/*
 
-COPY ros-entrypoint.sh /
-ENTRYPOINT ["/ros-entrypoint.sh"]
+COPY ros_entrypoint.sh /
+ENTRYPOINT ["/ros_entrypoint.sh"]
+CMD ["bash"]

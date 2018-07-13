@@ -35,7 +35,7 @@ RUN mkdir -p /tmp_ws/src/ \
   && cd /tmp_ws/ \
   && rosinstall_generator --rosdistro ${ROS_DISTRO} --deps --tar ros_core --exclude RPP > ros-core.rosinstall \
   && wstool init -j8 src ros-core.rosinstall \
-  && rosdep install -y -r --from-paths src --ignore-src \
+  && rosdep install -y --from-paths src --ignore-src \
   && apk add --virtual=.build-dep g++ gcc musl-dev make cmake python-dev \
   && cd /tmp_ws/ \
   && src/catkin/bin/catkin_make_isolated --install --install-space /opt/ros/${ROS_DISTRO} -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=OFF \

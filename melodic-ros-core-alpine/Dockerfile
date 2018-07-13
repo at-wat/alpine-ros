@@ -28,7 +28,7 @@ RUN rosdep init \
   && sed -i -e 's/ros\/rosdistro\/master/at-wat\/rosdistro\/alpine/' /etc/ros/rosdep/sources.list.d/20-default.list \
   && rosdep update
 
-ENV ROS_DISTRO kinetic
+ENV ROS_DISTRO melodic
 ENV ROS_PACKAGE_PATH /opt/ros/${ROS_DISTRO}/share
 
 RUN mkdir -p /tmp_ws/src/ \

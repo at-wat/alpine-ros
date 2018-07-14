@@ -1,10 +1,9 @@
 # Demo for ROS on Alpine Linux
 
-## rosdep install in alpine docker container
+# [minimal-rosdep-install](minimal-rosdep-install/)
 
-This repository has sample manifest with a dependency to tinyxml.
-Following command demonstrates that `rosdep install --from-paths src` command installs tinyxml package by using apk installer.
+Install one package from dependency defined in manifest file.
 
-```shell
-$ docker build -t ros:kinetic-alpine-demo .
-```
+# [melodic-ros-core-alpine](melodic-ros-core-alpine/)
+
+Build ros_core from source. All dependencies can be installed by rosdep.

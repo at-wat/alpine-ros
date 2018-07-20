@@ -40,8 +40,6 @@ RUN mkdir -p /tmp_ws/src/ \
   && cd /tmp_ws/ \
   && src/catkin/bin/catkin_make_isolated --install --install-space /opt/ros/${ROS_DISTRO} -DCMAKE_BUILD_TYPE=Release -DCATKIN_ENABLE_TESTING=OFF \
   && apk del .build-dep \
-  && apk del "*-dev" \
-  && apk add boost \
   && cd / \
   && rm -rf /tmp_ws \
   && rm -rf /root/.cache/pip \

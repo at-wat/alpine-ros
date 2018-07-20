@@ -25,7 +25,7 @@ RUN echo -e "import sys\nsys.setdefaultencoding('utf-8')" > /usr/lib/python2.7/s
 
 
 RUN rosdep init \
-  && sed -i -e 's/ros\/rosdistro\/master/at-wat\/rosdistro\/alpine/' /etc/ros/rosdep/sources.list.d/20-default.list \
+  && sed -i -e 's/ros\/rosdistro\/master/at-wat\/rosdistro\/add-alpine-ros-core-deps/' /etc/ros/rosdep/sources.list.d/20-default.list \
   && rosdep update
 
 ENV ROS_DISTRO melodic

@@ -25,7 +25,8 @@ stamp: now'
 
 ### Building and providing custom dependent packages
 
-1. Custom apks are built with https://github.com/seqsense/abuild-docker script.
+1. Custom apks are built with https://github.com/seqsense/ros-abuild-docker script.
+  - package definitions are at https://github.com/seqsense/aports-ros-experimental
   - this contains backport packages from alpine:edge and new not-yet-submitted packages
 2. Generated custom apks are placed at http://alpine-ros-experimental.dev-sq.work/
 

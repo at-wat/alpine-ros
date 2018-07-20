@@ -14,7 +14,7 @@ RUN apk add --no-cache \
   && apk del .temp
 
 RUN rosdep init \
-  && sed -i -e 's/ros\/rosdistro\/master/at-wat\/rosdistro\/alpine/' /etc/ros/rosdep/sources.list.d/20-default.list \
+  && sed -i -e 's/ros\/rosdistro\/master/at-wat\/rosdistro\/add-alpine-ros-core-deps/' /etc/ros/rosdep/sources.list.d/20-default.list \
   && rosdep update
 
 ENV ROS_DISTRO kinetic

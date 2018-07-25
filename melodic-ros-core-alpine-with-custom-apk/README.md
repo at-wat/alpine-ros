@@ -7,8 +7,8 @@ The image size of ros_core on Alpine Linux built with this package is 539MB.
 Our good friend Ubuntu based ROS image (ros:melodic-ros-core) is 997MB.
 
 ```
-ros        melodic-ros-core-alpine-custom-apk   0a7aeffebf4b        22 minutes ago      539MB
-ros        melodic-ros-core                     56161463aa0c        8 days ago          997MB
+ros        melodic-ros-core-alpine-custom-apk   0a7aeffebf4b        22 minutes ago      539MB  (Alpine based)
+ros        melodic-ros-core                     56161463aa0c        8 days ago          997MB  (Ubuntu based)
 ```
 
 ## Build

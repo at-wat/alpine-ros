@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 set -e
 
-source /opt/ros/${ROS_DISTRO}/setup.bash
+source /usr/ros/${ROS_DISTRO}/setup.sh
 
 exec "$@"

@@ -15,9 +15,9 @@ $ docker run -it --rm ros:melodic-ros-core-alpine-custom-apk
 ```
 
 ```shell
-bash-4.4# roscore &
-bash-4.4# rostopic echo /test &
-bash-4.4# rostopic pub -r1 -s /test std_msgs/Header 'frame_id: "frame"
+/ # roscore &
+/ # rostopic echo /test &
+/ # rostopic pub -r1 -s /test std_msgs/Header 'frame_id: "frame"
 stamp: now'
 ```
 

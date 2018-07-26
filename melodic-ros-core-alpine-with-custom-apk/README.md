@@ -1,5 +1,16 @@
 # Experimental ros_core image for Alpine Linux with custom apk repository
 
+## Benefits
+
+Using Alpine Linux as base system incredibly decreases installation size.
+The image size of ros_core on Alpine Linux built with this package is 539MB.
+Our good friend Ubuntu based ROS image (ros:melodic-ros-core) is 997MB.
+
+```
+ros        melodic-ros-core-alpine-custom-apk   0a7aeffebf4b        22 minutes ago      539MB  (Alpine based)
+ros        melodic-ros-core                     56161463aa0c        8 days ago          997MB  (Ubuntu based)
+```
+
 ## Build
 
 ```shell
@@ -15,9 +26,9 @@ $ docker run -it --rm ros:melodic-ros-core-alpine-custom-apk
 ```
 
 ```shell
-bash-4.4# roscore &
-bash-4.4# rostopic echo /test &
-bash-4.4# rostopic pub -r1 -s /test std_msgs/Header 'frame_id: "frame"
+/ # roscore &
+/ # rostopic echo /test &
+/ # rostopic pub -r1 -s /test std_msgs/Header 'frame_id: "frame"
 stamp: now'
 ```
 

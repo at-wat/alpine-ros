@@ -1,3 +1,8 @@
+## [DEPRECATED] This repository has been deprecated!
+Latest working Alpine ROS Dockerfile is available at https://github.com/alpine-ros/alpine-ros
+
+----
+
 # Demo for ROS on Alpine Linux
 
 ## [minimal-rosdep-install](minimal-rosdep-install/)

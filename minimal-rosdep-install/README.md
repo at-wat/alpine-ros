@@ -1,6 +1,7 @@
-<div style="width: 100%; background: 0xFFFF99">
-**[DEPRECATED] This repository has been deprecated. Latest working Alpine ROS Dockerfile is available at https://github.com/alpine-ros/alpine-ros**
-<div>
+## [DEPRECATED] This repository has been deprecated!
+Latest working Alpine ROS Dockerfile is available at https://github.com/alpine-ros/alpine-ros
+
+----
 
 # rosdep install in alpine docker container
 

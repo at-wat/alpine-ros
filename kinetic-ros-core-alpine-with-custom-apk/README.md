@@ -1,3 +1,7 @@
+<div style="width: 100%; background: 0xFFFF99">
+**[DEPRECATED] This repository has been deprecated. Latest working Alpine ROS Dockerfile is available at https://github.com/alpine-ros/alpine-ros**
+<div>
+
 # Experimental ros_core image for Alpine Linux with custom apk repository
 
 ## Benefits
